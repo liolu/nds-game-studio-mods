@@ -2,8 +2,8 @@
  "format": 1,
  "id": "premiere-personne",
  "name": "Vue a la premiere personne",
- "version": "1.0.0",
+ "version": "1.1.0",
  "author": "Nds Game Studio",
- "description": "La camera se place dans les yeux du personnage. Le regard suit la direction du personnage : haut pour avancer, gauche et droite pour tourner. Les cinematiques passent aussi par cette vue.",
+ "description": "La camera se place dans les yeux du personnage et la souris la dirige. Les fleches font avancer, reculer et aller a gauche ou a droite par rapport au regard. F7 libere le curseur, pour toucher l'ecran du bas. Les cinematiques passent aussi par cette vue.",
  "games": ["AL7E"]
 }
