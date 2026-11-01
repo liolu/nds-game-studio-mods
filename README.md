@@ -32,6 +32,7 @@ A mod has one place, one version and one description, even for several games: to
 | `first_person` | Mouse-driven camera in the character's eyes (games described in the studio's `native/games/patches.json`) |
 | `network` | The game's wireless link over the PC's network |
 | `skip_intro` | Starts on the game's menu |
+| `free_camera` | C detaches the camera, V freezes the scene (games described in the studio's `native/games/patches.json`) |
 
 ## Mods
 
@@ -41,3 +42,4 @@ A mod has one place, one version and one description, even for several games: to
 | [First-person view](premiere-personne) | Lego Star Wars II (AL7E) |
 | [Network multiplayer](multijoueur) | Lego Star Wars II (AL7E) |
 | [Skip intro](skip-intro) | Lego Star Wars II (AL7E) |
+| [Free camera](camera-libre) | Lego Star Wars II (AL7E) |

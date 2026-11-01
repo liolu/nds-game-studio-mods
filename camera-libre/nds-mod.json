@@ -1,0 +1,11 @@
+{
+ "format": 1,
+ "id": "camera-libre",
+ "name": "Free camera",
+ "name_fr": "Camera libre",
+ "version": "1.0.0",
+ "author": "Nds Game Studio",
+ "description": "Press C to detach the camera, in game or during a cutscene, and C again to get it back. The mouse looks around, the arrow keys move, the DS L and R buttons go down and up, A goes faster and B slower. The game gets no input meanwhile. V freezes the scene and V resumes it. F7 frees the cursor. Needs the latest experimental version of the app.",
+ "description_fr": "C detache la camera, en jeu ou pendant une cinematique, et C la rend. La souris regarde, les fleches deplacent, les boutons L et R du DS descendent et montent, A va plus vite et B moins vite. Le jeu ne recoit plus les touches pendant ce temps. V gele la scene et V la relance. F7 libere le curseur. Demande la derniere version experimentale de l'app.",
+ "games": ["AL7E"]
+}
