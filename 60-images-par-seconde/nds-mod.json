@@ -1,0 +1,9 @@
+{
+ "format": 1,
+ "id": "60-images-par-seconde",
+ "name": "60 images par seconde",
+ "version": "1.0.0",
+ "author": "Nds Game Studio",
+ "description": "La 3D du jeu passe de 30 a 60 images par seconde, sans changer sa vitesse : le runtime dessine une image intermediaire entre deux images du jeu. Les menus et l'affichage 2D restent a leur cadence.",
+ "games": ["AL7E"]
+}

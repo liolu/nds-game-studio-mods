@@ -1,0 +1,9 @@
+{
+ "format": 1,
+ "id": "premiere-personne",
+ "name": "Vue a la premiere personne",
+ "version": "1.0.0",
+ "author": "Nds Game Studio",
+ "description": "La camera se place dans les yeux du personnage. Le regard suit la direction du personnage : haut pour avancer, gauche et droite pour tourner. Les cinematiques passent aussi par cette vue.",
+ "games": ["AL7E"]
+}

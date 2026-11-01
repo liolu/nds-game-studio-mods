@@ -1,0 +1,9 @@
+{
+ "format": 1,
+ "id": "multijoueur",
+ "name": "Multijoueur en reseau",
+ "version": "1.0.0",
+ "author": "Nds Game Studio",
+ "description": "Le mode Arene du jeu passe par le reseau du PC au lieu du sans-fil du DS. Chaque joueur a sa propre rom. En jeu, Select + X ouvre le menu : Host Multi-Card Game pour heberger, Join Wireless Game pour rejoindre. La partie telechargee (Host Single-Card Game) ne marche pas.",
+ "games": ["AL7E"]
+}
