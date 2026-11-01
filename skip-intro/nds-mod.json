@@ -1,0 +1,11 @@
+{
+ "format": 1,
+ "id": "skip-intro",
+ "name": "Skip intro",
+ "name_fr": "Passer l'intro",
+ "version": "1.0.0",
+ "author": "Nds Game Studio",
+ "description": "Starts straight on the game's menu, without the logos and the opening text.",
+ "description_fr": "Le jeu demarre directement sur son menu, sans les logos ni le texte d'ouverture.",
+ "games": ["AL7E"]
+}

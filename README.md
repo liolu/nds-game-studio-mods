@@ -1,39 +1,43 @@
-# Mods de Nds Game Studio
+# Nds Game Studio mods
 
-Les mods de base de l'app. Le launcher lit ce dépôt quand on ouvre l'onglet **Moding** d'un jeu (Options > Launcher > Les mods de l'app) et montre ceux qui vont avec ce jeu ; on les installe en un clic, et on les coupe ou on les retire de la même façon.
+The app's base mods. The launcher reads this repository when you open a game's **Modding** tab (Settings > Launcher > The app's mods) and lists the mods for that game. Install, turn off or remove them with one click.
 
-## Rangement : un dossier par mod
+*En français : les mods de base de l'app, listés dans l'onglet Moding de chaque jeu. Chaque mod a aussi son nom et sa description en français (`name_fr`, `description_fr`).*
+
+## Layout: one folder per mod
 
 ```
-nds-mods.json          la liste des dossiers
+nds-mods.json          list of the folders
 <mod>/
-  nds-mod.json         nom, version, jeux compatibles
-  <CODE DU JEU>/       ce qui ne vaut que pour ce jeu
-    native.json        fonctions demandées au runtime
-    fichiers/          fichiers du jeu au format de l'export (PNG, OBJ, WAV...)
-    remplacements/     fichiers au format du jeu
+  nds-mod.json         name, version, compatible games
+  <GAME CODE>/         what only applies to this game
+    native.json        features asked of the runtime
+    fichiers/          game files in the export format (PNG, OBJ, WAV...)
+    remplacements/     files in the game's format
 ```
 
-Un mod a un seul endroit, une seule version et une seule description, même s'il va avec plusieurs jeux : ajouter un jeu, c'est ajouter son dossier et son code dans `games`.
+A mod has one place, one version and one description, even for several games: to add a game, add its folder and its code in `games`.
 
-`nds-mod.json` :
+`nds-mod.json`:
 
 ```json
-{ "format": 1, "id": "mon-mod", "name": "Mon mod", "version": "1.0.0", "author": "...", "description": "...", "games": ["AL7E"] }
+{ "format": 1, "id": "my-mod", "name": "My mod", "name_fr": "Mon mod", "version": "1.0.0", "author": "...", "description": "...", "description_fr": "...", "games": ["AL7E"] }
 ```
 
-`native.json` : `{ "features": ["interpolate"] }`. Un mod ne contient que des données : il demande une fonction que le runtime de l'app possède déjà, et n'apporte aucun code.
+`native.json`: `{ "features": ["interpolate"] }`. A mod only holds data: it asks for a feature the app's runtime already has and brings no code.
 
-| Fonction | Effet |
+| Feature | Effect |
 | --- | --- |
-| `interpolate` | Images intermédiaires entre celles du jeu |
-| `first_person` | Caméra dans les yeux du personnage (jeux décrits dans `native/games/patches.json` du studio) |
-| `network` | Liaison sans fil du jeu passée par le réseau du PC |
+| `interpolate` | Extra frames between the game's frames |
+| `first_person` | Mouse-driven camera in the character's eyes (games described in the studio's `native/games/patches.json`) |
+| `network` | The game's wireless link over the PC's network |
+| `skip_intro` | Starts on the game's menu |
 
-## Les mods
+## Mods
 
-| Mod | Jeux |
+| Mod | Games |
 | --- | --- |
-| [60 images par seconde](60-images-par-seconde) | Lego Star Wars II (AL7E) |
-| [Vue à la première personne](premiere-personne) | Lego Star Wars II (AL7E) |
-| [Multijoueur en réseau](multijoueur) | Lego Star Wars II (AL7E) |
+| [60 frames per second](60-images-par-seconde) | Lego Star Wars II (AL7E) |
+| [First-person view](premiere-personne) | Lego Star Wars II (AL7E) |
+| [Network multiplayer](multijoueur) | Lego Star Wars II (AL7E) |
+| [Skip intro](skip-intro) | Lego Star Wars II (AL7E) |

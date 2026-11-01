@@ -1,9 +1,11 @@
 {
  "format": 1,
  "id": "premiere-personne",
- "name": "Vue a la premiere personne",
- "version": "1.1.0",
+ "name": "First-person view",
+ "name_fr": "Vue a la premiere personne",
+ "version": "1.2.0",
  "author": "Nds Game Studio",
- "description": "La camera se place dans les yeux du personnage et la souris la dirige. Les fleches font avancer, reculer et aller a gauche ou a droite par rapport au regard. F7 libere le curseur, pour toucher l'ecran du bas. Les cinematiques passent aussi par cette vue.",
+ "description": "The camera sits in the character's eyes and follows the mouse, with arms at the bottom of the screen and a crosshair. The arrow keys move forward, back, left and right. Left click shoots. F7 frees the cursor to touch the bottom screen. Cutscenes use this view too.",
+ "description_fr": "La camera se place dans les yeux du personnage et suit la souris, avec les bras en bas de l'image et un viseur. Les fleches font avancer, reculer et aller a gauche ou a droite. Le clic gauche tire. F7 libere le curseur, pour toucher l'ecran du bas. Les cinematiques passent aussi par cette vue.",
  "games": ["AL7E"]
 }

@@ -1,4 +1,4 @@
 {
  "format": 1,
- "mods": ["60-images-par-seconde", "premiere-personne", "multijoueur"]
+ "mods": ["60-images-par-seconde", "premiere-personne", "multijoueur", "skip-intro"]
 }
