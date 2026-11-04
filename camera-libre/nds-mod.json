@@ -15,7 +15,7 @@
  "type": "native",
  "api": "1.0",
  "plugin": {
-  "windows-x86": "lib/windows-x86/camera_libre.dll"
+  "windows-x86_64": "lib/windows-x86_64/camera_libre.dll"
  },
  "settings": [
   {
