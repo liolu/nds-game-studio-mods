@@ -49,8 +49,9 @@ static inline int nds_setting_int(const nds_api *api, nds_mod *mod, const char *
 
 static inline int nds_lang_fr(const nds_api *api) { return api->language && api->language[0] == 'f'; }
 
-#ifdef _WIN32
-/* sans bibliotheque C : le point d'entree de la DLL ne fait rien */
+#if defined(_WIN32) && !defined(NDS_NO_ENTRY)
+/* sans bibliotheque C : le point d'entree de la DLL ne fait rien. Un mod de plusieurs sources definit NDS_NO_ENTRY dans toutes
+ * sauf une (ou n'inclut nds_util.h qu'une fois). */
 #if defined(__i386__)
 int __stdcall DllMainCRTStartup(void *inst, nds_u32 reason, void *reserved) { return 1; }
 #else
