@@ -29,10 +29,21 @@ A mod has one place, one version and one description, even for several games: to
 | Feature | Effect |
 | --- | --- |
 | `interpolate` | Extra frames between the game's frames |
-| `first_person` | Mouse-driven camera in the character's eyes (games described in the studio's `native/games/patches.json`) |
 | `network` | The game's wireless link over the PC's network |
-| `skip_intro` | Starts on the game's menu |
-| `free_camera` | C detaches the camera, V freezes the scene (games described in the studio's `native/games/patches.json`) |
+
+## Native mods (format 2)
+
+A mod can also bring code: a library per computer that only knows [`sdk/nds_mod.h`](sdk/nds_mod.h) (MIT), loaded by the game's runtime. The launcher says « Runs code on this computer » before installing it. First-person view, Free camera and Skip intro are such mods: their source is in `<mod>/src/`, their library in `<mod>/lib/<computer>/`.
+
+```json
+{ "format": 2, "id": "camera-libre", "version": "2.0.0", "type": "native", "api": "1.0", "games": { "AL7E": ["<rom SHA-1>"] },
+  "plugin": { "windows-x86": "lib/windows-x86/camera_libre.dll" },
+  "settings": [ { "key": "free", "name": "Free camera key", "type": "keybind", "default": "KeyC" } ] }
+```
+
+`./build.sh` compiles every `src/*.c` for Windows (32-bit `gcc -m32` and `ld`, no C library, like the runtime). `sdk/nds_util.h` has the small helpers the base mods share (sine, arc tangent, settings).
+
+*En français : un mod peut aussi apporter du code, une bibliotheque par machine qui ne connait que `sdk/nds_mod.h`. Vue a la premiere personne, Camera libre et Passer l'intro en sont : sources dans `src/`, bibliotheque dans `lib/`. `./build.sh` les compile.*
 
 ## Mods
 

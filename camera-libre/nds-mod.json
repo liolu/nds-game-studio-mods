@@ -1,11 +1,37 @@
 {
- "format": 1,
+ "format": 2,
  "id": "camera-libre",
  "name": "Free camera",
  "name_fr": "Camera libre",
- "version": "1.0.0",
+ "version": "2.0.0",
  "author": "Nds Game Studio",
- "description": "Press C to detach the camera, in game or during a cutscene, and C again to get it back. The mouse looks around, the arrow keys move, the DS L and R buttons go down and up, A goes faster and B slower. The game gets no input meanwhile. V freezes the scene and V resumes it. F7 frees the cursor. Needs the latest experimental version of the app.",
- "description_fr": "C detache la camera, en jeu ou pendant une cinematique, et C la rend. La souris regarde, les fleches deplacent, les boutons L et R du DS descendent et montent, A va plus vite et B moins vite. Le jeu ne recoit plus les touches pendant ce temps. V gele la scene et V la relance. F7 libere le curseur. Demande la derniere version experimentale de l'app.",
- "games": ["AL7E"]
+ "description": "A key (C by default) detaches the camera, in game or during a cutscene, and gives it back. The mouse looks around, the arrow keys move, the DS L and R buttons go down and up, A goes faster and B slower. The game gets no input meanwhile. Another key (V) freezes the scene and resumes it. F7 frees the cursor. Both keys can be changed in the mod's settings.",
+ "description_fr": "Une touche (C par defaut) detache la camera, en jeu ou pendant une cinematique, et la rend. La souris regarde, les fleches deplacent, les boutons L et R du DS descendent et montent, A va plus vite et B moins vite. Le jeu ne recoit plus les touches pendant ce temps. Une autre touche (V) gele la scene et la relance. F7 libere le curseur. Les deux touches se changent dans les reglages du mod.",
+ "games": {
+  "AL7E": [
+   "7c1afa070797945ba5a2577c7ddfded5cf2fc443"
+  ]
+ },
+ "type": "native",
+ "api": "1.0",
+ "plugin": {
+  "windows-x86": "lib/windows-x86/camera_libre.dll"
+ },
+ "settings": [
+  {
+   "key": "free",
+   "name": "Free camera key",
+   "name_fr": "Touche de la camera libre",
+   "type": "keybind",
+   "default": "KeyC"
+  },
+  {
+   "key": "freeze",
+   "name": "Freeze key",
+   "name_fr": "Touche du gel",
+   "type": "keybind",
+   "default": "KeyV"
+  }
+ ],
+ "multiplayer": ""
 }

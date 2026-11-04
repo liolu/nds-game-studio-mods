@@ -1,11 +1,21 @@
 {
- "format": 1,
+ "format": 2,
  "id": "skip-intro",
  "name": "Skip intro",
  "name_fr": "Passer l'intro",
- "version": "1.0.0",
+ "version": "2.0.0",
  "author": "Nds Game Studio",
  "description": "Starts straight on the game's menu, without the logos and the opening text.",
  "description_fr": "Le jeu demarre directement sur son menu, sans les logos ni le texte d'ouverture.",
- "games": ["AL7E"]
+ "games": {
+  "AL7E": [
+   "7c1afa070797945ba5a2577c7ddfded5cf2fc443"
+  ]
+ },
+ "type": "native",
+ "api": "1.0",
+ "plugin": {
+  "windows-x86": "lib/windows-x86/skip_intro.dll"
+ },
+ "multiplayer": "safe"
 }
